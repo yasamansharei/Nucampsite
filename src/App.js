@@ -5,6 +5,7 @@ import Header from './app/components/Header';
 import Footer from './app/components/Footer';
 import CampsitesDirectoryPage from './pages/CampsitesDirectoryPage';
 import CampsiteDetailPage from './pages/CampsiteDetailPage';
+import AboutPgae from './pages/AboutPgae';
 import './App.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
             <Routes>
                 <Route path='/' element={<HomePage />} />
                 <Route path='contact' element={<ContactPage />} />
+                <Route path='about' element={<AboutPgae />} />
                 <Route path='directory' element={<CampsitesDirectoryPage />} />
                 <Route
                     path='directory/:campsiteId'
