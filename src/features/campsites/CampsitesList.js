@@ -4,7 +4,7 @@ import { selectAllCampsites } from './campsitesSlice';
 import { useState } from 'react';
 
 const CampsitesList = () => {
-  const campsites = selectAllCampsites();
+    const campsites = useSelector(selectAllCampsites);
   return (
       <Row className='ms-auto'>
           {campsites.map((campsite) => {
