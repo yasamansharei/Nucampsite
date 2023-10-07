@@ -10,12 +10,15 @@ import CampsiteDetailPage from './pages/CampsiteDetailPage';
 import AboutPgae from './pages/AboutPgae';
 import './App.css';
 import { fetchCampsites } from './features/campsites/campsitesSlice';
+import { fetchPartners } from './features/partners/partnersSlice';
 
 function App() {
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(fetchCampsites());
+        dispatch(fetchPartners());
     }, [dispatch]);
+
     return (
         <div className='App'>
             <Header />
