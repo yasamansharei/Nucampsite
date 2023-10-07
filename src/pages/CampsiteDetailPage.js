@@ -4,6 +4,8 @@ import { selectCampsiteById } from '../features/campsites/campsitesSlice';
 import CampsiteDetail from '../features/campsites/CampsiteDetail';
 import CommentsList from '../features/comments/CommentsList';
 import SubHeader from '../app/components/SubHeader';
+import { useSelector } from 'react-redux';
+
 
 const CampsiteDetailPage = () => {
     const { campsiteId } = useParams();

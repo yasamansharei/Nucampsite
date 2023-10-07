@@ -1,7 +1,7 @@
 import {Col,Row} from 'reactstrap';
 import CampsiteCard from "./CampsiteCard";
 import { selectAllCampsites } from './campsitesSlice';
-import { useState } from 'react';
+import { useSelector } from 'react';
 
 const CampsitesList = () => {
     const campsites = useSelector(selectAllCampsites);
